@@ -9,7 +9,7 @@ profile:
   image: headshot.png
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>MSCS Student, Georgia Tech</p>
+    <p>MSCS Student, Georgia Institute of Technology</p>
     <p>Developer, NSF OKN</p>
 
 news: false  # includes a list of news items
