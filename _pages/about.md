@@ -2,25 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: headshot.png
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>MSCS Student, Georgia Tech</p>
+    <p>Developer, NSF OKN</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi there! Welcome to my corner of the internet. I am a student Georgia Tech enrolled in the CS dual degree program. I am currently exploring retrieval systems, language models, LLM orhcestration tooling, and cloud infrastructure and delivery systems. I am also a developer for the NSF Open Knowledge Network project that is building the world's largest open source index of scientific works, authors, and grants. I work on the backend infrastructure and data pipelines that power the OKN.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am not limited to to above topics. I have previously worked in genome analysis and edge computing, had a brief stint in mineral analysis, and I love securities valuation and have a minor in Economics from the Ivan Allen school at Georgia Tech. At heart, I am a builder and a tinkerer. I am always looking for new opportunities to learn and grow. If you have an interesting project or opportunity or just want to chat, please reach out to me!
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In my free time, I like to play narrative based video games like Suzerain and 80 Days, brew and complain about coffee, and code personal projects or learn new frameworks.
