@@ -12,7 +12,7 @@ This was a joint project by me, [Harsh Muriki](https://www.linkedin.com/in/venka
 
 We used the GMail and Google Calendar APIs to read and write events automatically. Emails were fetched using a timer trigger every hour and plain text was extracted using a BeautifulSoup parser. We used OpenAI's GPT-4 Turbo API to classify the emails as "eventful" or not. We experimented with various models but found only GPT-4 to cross the 95% accuracy threshold we wanted. For the eventful emails, we used GPT-3.5 Turbo with JSON output grammar decoder to get structured output for events details and directly write to the calendar. 
 
-We hosted our frontend on NextJS and all our backend services use a modular architecture with an access point using Flask API that runs on Google Cloud Run. This is because our project is a work in progress and we plan to add integrations for Outlook and iCloud (plus a cleaner UI that exists on Heroku) and a modular architecture is easily extensible. Below is an abridged example of one of our backend services.
+We hosted our frontend on NextJS and all our backend services use a modular architecture with an access point using Flask API that runs on Google Cloud Run. This is because our project is a work in progress and we plan to add integrations for Outlook and iCloud (plus a cleaner UI that exists on Heroku) and a modular architecture is easily extensible. The project is open source and can be found at [EvoCal Github](https://github.com/harshmuriki/EvoCal/tree/main). Below is an abridged example of one of our backend services.
 
 ```python
 
@@ -56,5 +56,3 @@ if __name__ == '__main__':
     pass
 
 ```
-
-The project is open source and can be found at [EvoCal Github](https://github.com/harshmuriki/EvoCal/tree/main)

@@ -1,6 +1,4 @@
-            {%- if site.email -%}
-            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
-            {% endif %}
+            
             {%- if site.telegram_username -%}
             <a href="https://telegram.me/{{ site.telegram_username }}" title="telegram"><i class="fa-brands fa-telegram"></i></a>
             {% endif %}
@@ -33,6 +31,9 @@
             {% endif %}
             {%- if site.github_username -%}
             <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            {% endif %}
+            {%- if site.email -%}
+            <a href="mailto:{{ site.email | encode_email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
             {% endif %}
             {%- if site.linkedin_username -%}
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>

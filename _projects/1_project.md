@@ -16,18 +16,17 @@ I started by studying the usage logs from eight scanners from Walmart and Aldi a
 
 I was in charge of systems design to final testing. Two questions guided my system design choices: scalability and cost. Analytics and data cloud are inherently expensive products and our target was a dashboard that was real-time within a 5-minute threshold. For data collection, I used the company's proprietary AFR systems deployed on NCR private cloud. The data returned by AFR is in XML format contains a lot of sensititve information. I wrote stress-tested Python scripts to process the XML to remove sensitive information. These scripts run on the private cloud due to legal requirements.
 
-With the help of the database team, I designed a schema for a custom SQL Server on Azure database and implemented it as a managed instance - providing a blend of flexibility and cost efficacy. I wrote a Python script to process the XML data and insert it into the database. This script runs on Azure Functions and is accessible only with a custom API endpoint created with Azure API Management. Even if I say so myself, this is a clever design. Why? After conducting experiments with VM and Functions, I found the Azure Functions is cheaper and faster to scale. I could have used a blob storage trigger but that is slower and you must pay for the storage. An API endpoint costs almost nothing and the private cloud makes a direct request to this endpoint. The script updates the database. The database is the source of truth so we don't need AFR data anymore. A snapshot of the database is taken every 12 hours and stored in a blob storage container. This is the data source for the dashboard.
+With the help of the database team, I designed a schema for a custom [SQL Server](https://azure.microsoft.com/en-us/free/sql-database/search/?OCID=AIDcmm5edswduu_SEM__k_CjwKCAiAjrarBhAWEiwA2qWdCKmZVsVSCM_7j6_No2HNFRMZnkYqRYPsdJ5SQPluehzKtQb0CuvzkxoC1e4QAvD_BwE_k_&gad_source=1) on Azure database and implemented it as a managed instance - providing a blend of flexibility and cost efficacy. I wrote a Python script to process the XML data and insert it into the database. This script runs on [Azure Functions](https://azure.microsoft.com/en-us/products/functions/?OCID=AIDcmm5edswduu_SEM__k_CjwKCAiAjrarBhAWEiwA2qWdCLrJqoHo7wITfCFQUAdg7o9gYjQicOFI9D7T_lB_hpxzNO8Wkn53QRoCacsQAvD_BwE_k_&gad_source=1) and is accessible only with a custom API endpoint created with [Azure API Management](https://azure.microsoft.com/en-us/products/api-management/?OCID=AIDcmm5edswduu_SEM__k_CjwKCAiAjrarBhAWEiwA2qWdCPtClNeg9aD6wtSOq6MM4QqG3PSZutAfNLdvT4X84B90BiXRbbsGThoCnTEQAvD_BwE_k_&gad_source=1). Even if I say so myself, this is a clever design. Why? After conducting experiments with VM and Functions, I found the Azure Functions is cheaper and faster to scale. I could have used a blob storage trigger but that is slower and you must pay for the storage. An API endpoint costs almost nothing and the private cloud makes a direct request to this endpoint. The script updates the database. The database is the source of truth so we don't need AFR data anymore. A snapshot of the database is taken every 12 hours and stored in a blob storage container. This is the data source for the dashboard.
 
 To make this powerful data accessible, I created Grafana dashboards for Walmart. The dashboard provided upto minute accurate information on operational performance at company level, store level, and unit level for the SCO devices. The dashboard also provided predictive analytics on what units might fail in the next month and sent a notification to the right company representative with suggested early maintenance. This used [Azure Communication Services](https://azure.microsoft.com/en-us/products/communication-services) to managed and send emails. 
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="col-sm mt-3 mt-md-0 text-center">
+    <div class="d-flex align-items-center justify-content-center">
         {% include figure.html path="assets/img/grafana.png" title="Dashboard example" class="img-fluid rounded z-depth-1 img-center" %}
     </div>
-</div>
-<div class="caption">
-    I cannot share actual dashboard pictures but it looked something like this.
+    <div class="caption">
+        I cannot share actual dashboard pictures but it looked something like this.
+    </div>
 </div>
 
-
-At the end, this system was deployed to all 600 machines in the test batch processing 20 million log events, sending 18,000 dashboard updates, and sending 40 early maintenance notifications every day.
+By the end, this system was deployed to all 600 machines in the test batch processing 20 million log events, sending 18,000 dashboard updates, and sending 40 early maintenance notifications every day.
