@@ -7,28 +7,34 @@ nav: true
 nav_order: 5
 ---
 
-Chinar Dankhara
-930 Spring St NW
-Atlanta, GA, 30309
-(470) 443-7987
+Chinar Dankhara \
+930 Spring St NW \
+Atlanta, GA, 30309 \
+(470) 443-7987 
 
-Talent Acquisition Coordinator  
+December 4, 2023 
 
-Dear Reader,
+Talent Acquisition Team \
+Palantir Technologies 
 
-I am writing to express my keen interest in contributing to a forward-thinking software engineering team, where my unique blend of creativity and technical proficiency can be utilized in crafting solutions that resonate with friendly design, superb engineering, and AI innovation.
 
-At Delta Airlines, I spearheaded a pioneering project to revolutionize speech-to-text systems, achieving a breakthrough in memory and cost efficiency. This innovation allowed for seamless cross-lingual communication via compact devices — a patented marvel that encapsulates my drive for impactful technology.
+Dear Talent Acquisition Team,
 
-My fervor for infrastructure is exemplified by my extensive hands-on experience with cloud platforms like AWS and Azure. At NCR, I navigated the complexities of managing massive datasets, orchestrating 20 million logs daily across an international network. These experiences have not only honed my technical skills but also instilled a profound appreciation for the transformative power of big data.
+I'm excited to apply for the Forward Deployed Software Engineer position at Palantir, a company I admire for its commitment to harnessing data in transforming critical sectors. My journey in software engineering, marked by innovation and a knack for problem-solving, aligns seamlessly with the impactful work you do.
 
-On a personal front, I actively seek out projects that challenge the status quo. My latest project, Evocal, embodies this spirit. It's a tool that elegantly integrates event detection with calendar management, underpinned by serverless architecture and custom APIs made with Flask and deployed with Google Cloud Run. It's initiatives like Evocal that reflect my commitment to redefining the interface between life and technology.
+At Delta Airlines, my role in developing a groundbreaking speech-to-text system echoes Palantir's ethos of turning complex data into practical solutions. The project's success in enhancing cross-lingual communication mirrors the transformative impact I aim to achieve with your team.
 
-I constantly enrich my knowledge by engaging with cutting-edge literature and translating challenges I encounter into technological solutions. I've created tools like ScholarWeb and Valuation Companion, which showcase my capacity to innovate and reimagine everyday processes. ScholarWeb was created to solve my personal frustration with the lack of a unified platform for academic research. Valuation Companion was created to streamline the process of learning from the valuation lectures by Professor Damodaran using AI. 
+My hands-on experience with AWS and Azure, managing massive datasets at NCR, directly relates to Palantir's dynamic, data-intensive environment. I've thrived in roles that require a startup CTO's agility - from architecting systems to coding custom solutions and setting strategic directions.
 
-My professional ethos is rooted in the principle of 'strong opinions, weakly held.' This approach empowers me to make and stand by decisive choices while remaining agile in adapting to new information. It's this blend of conviction and flexibility that fuels my rapid learning and drives continuous improvement in my craft.
+One of my personal projects, Evocal, demonstrates my ability to blend technical skill with creative thinking. Its unique approach to integrating event detection with calendar management, using serverless architecture, is precisely the kind of innovative solution I'm excited to bring to Palantir.
 
-I am excited about the prospect of discussing how my background, innovations, and philosophies align with the mission of your team.
+The Forward Deployed Software Engineer role excites me as it resonates with my passion for using large-scale data to solve real-world problems. My experience in Python, Java, and C++, coupled with a strong foundation in Computer Science, aligns with the technical demands of the position. Moreover, my eagerness to collaborate with diverse teams and adapt to evolving challenges fits perfectly with Palantir's dynamic work environment.
+
+I am particularly drawn to the opportunity at Palantir to engage in projects with significant global impact. My philosophy of 'strong opinions, weakly held' has always propelled me to innovate while remaining open to new ideas and approaches - a mindset I see mirrored at Palantir.
+
+I am enthusiastic about the chance to discuss how my background, innovative approach, and commitment to impactful technology can contribute to the cutting-edge work at Palantir Technologies.
+
+Thank you for considering my application. I look forward to the possibility of contributing to your team and making a real difference in the world through our work.
 
 Warm regards, \
 Chinar Dankhara
