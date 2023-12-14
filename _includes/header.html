@@ -56,7 +56,7 @@
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
-                {%- if p.url contains '/cv/' or p.url contains '/projects/' or p.url contains '/teaching/' -%}
+                {%- if p.url contains '/cv/' or p.url contains '/projects/' -%}
                 <li class="nav-item {% if page.url == p.url %}active{% endif %}">
                   <a class="nav-link" href="{{ p.url | relative_url }}">{{ p.title }}
                     {%- if page.url == p.url -%}
